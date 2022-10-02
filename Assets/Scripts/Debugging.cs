@@ -6,7 +6,7 @@ using UnityEngine.Experimental.AI;
 
 namespace AlexzanderCowell
 {
-    public class WeekTwoActivites : MonoBehaviour
+    public class Debugging : MonoBehaviour
 {   
         [SerializeField] private string favouriteGame = "World of Tanks";
         [SerializeField] private int hoursPlayed = 5000;
