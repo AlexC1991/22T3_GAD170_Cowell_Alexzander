@@ -11,40 +11,39 @@ namespace AlexzanderCowell
     public class CreateSomeStats : MonoBehaviour
     {
         [Header("Character Stats")]
-        [Range(0, 20)]
-        [SerializeField] private float statPool;
-        private float strength = 0f;
-        private float aglity = 0f;
-        private float intelligence = 0f;
+        private int strength = 0;
+        private int aglity = 0;
+        private int intelligence = 0;
+        private bool Key;
+
         // Start 
-        void Print()
+        private void Update() 
+           
         {
-            strength = Random.Range(0, 7);
-            aglity = Random.Range(0, 6);
-            intelligence = Random.Range(0, 7);
-
-            Debug.Log("CHARACTER STATS");
-
-            statPool -= strength;
-            Debug.Log("Character's Strength " + strength);           
-
-            statPool -= aglity;
-            Debug.Log("Character's Aglity " + aglity);
-
-            statPool -= intelligence;
-            Debug.Log("Character's Intelligence " + intelligence);
-
-            Debug.Log("Stat Pool Total " + statPool);
+            Key = Input.GetButtonDown("Submit");
             
-
-        }
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Return))
-                Print();
+            if (Key == true)
                 
+            {
+
+                int statPool = 20;
+                strength = Random.Range(1, statPool);
+                statPool = statPool - strength;
+                aglity = Random.Range(1, statPool);
+                statPool = statPool - aglity;
+                intelligence = Random.Range(1, statPool);
+                statPool = statPool - intelligence;
+
+                // Output of Stats
+                Debug.Log("CHARACTER STATS");
+                Debug.Log("Character's Strength " + strength);
+                Debug.Log("Character's Aglity " + aglity);
+                Debug.Log("Character's Intelligence " + intelligence);
+                Debug.Log("statPool Total " + statPool);
+
+            }
+
         }
 
     }
-
 }

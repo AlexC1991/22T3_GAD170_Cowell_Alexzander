@@ -28,7 +28,7 @@ namespace AlexzanderCowell
             {
                 Debug.Log("The number was less than 3 or greater than 5");
             }
-            else if (calculatedNumber != 4)
+            else if (calculatedNumber == 4)
             {
                 Debug.Log("The number is not 4");
             }
