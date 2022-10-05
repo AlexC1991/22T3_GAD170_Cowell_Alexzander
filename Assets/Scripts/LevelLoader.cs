@@ -3,12 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace AlexzanderCowell
-{
-    public class LevelLoader : MonoBehaviour
-    {
-        private void Update()
-        {
+namespace AlexzanderCowell{
+    public class LevelLoader : MonoBehaviour{
+        private void Update(){
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 LoadLevel("WeekTwoActivites");
@@ -21,8 +18,7 @@ namespace AlexzanderCowell
         /// <summary>
         /// Level Loader
         /// </summary>
-        private void LoadLevel(string sceneToLoad)
-        {
+        private void LoadLevel(string sceneToLoad){
             SceneManager.LoadScene(sceneToLoad);
         }
 
