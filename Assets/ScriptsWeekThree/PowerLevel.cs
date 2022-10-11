@@ -19,6 +19,7 @@ namespace AlexzanderCowell
         private float totalX2Two;
         private float totalX3Two;
         private float WinnerIs;
+        private float Percentage;
 
 
         private void Update() {
@@ -42,6 +43,8 @@ namespace AlexzanderCowell
 
                 totalX3Two = totalX2Two + intelligenceTwo;
 
+                Percentage = (totalX3One / totalX3Two) * 100;
+
             }
 
             if (Input.GetKeyDown(KeyCode.Return)) 
@@ -59,6 +62,7 @@ namespace AlexzanderCowell
 
                 Debug.Log("Player one had " + totalX3One + " power level");
                 Debug.Log("Player two had " + totalX3Two + " power level");
+                Debug.Log("The winner won by " + Percentage + " percent.");
             }
 
 
