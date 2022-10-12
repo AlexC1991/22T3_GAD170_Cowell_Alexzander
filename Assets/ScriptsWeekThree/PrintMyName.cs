@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace AlexzanderCowell
+{
+
+}
 public class PrintMyName : MonoBehaviour
 {
     private TMPro.TextMeshProUGUI textMesh; // Calls for the TextMeshPro to be used in script.
