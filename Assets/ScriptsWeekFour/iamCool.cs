@@ -6,7 +6,7 @@ namespace AlexzanderCowell
 {
 
 }
-public class iamCool : MonoBehaviour
+public class imSoCool : MonoBehaviour
 {
     [SerializeField] Conversions convertThis;
     private float A = 10f;
@@ -20,8 +20,9 @@ public class iamCool : MonoBehaviour
 
     private void Start()
     {
-        if (GetComponent<Conversions>().z <= A)
+        if (Input.GetKeyDown(KeyCode.Return))
         {
+            bool v = GetComponent<Conversions>().z <= A;
             Debug.Log("Temp 0-10 then Very Cold weather");
         }
     }

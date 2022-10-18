@@ -1,18 +1,31 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Converation : MonoBehaviour
+using UnityEngine.UI;
+namespace AlexzanderCowell
 {
-    // Start is called before the first frame update
-    void Start()
+
+}
+public class Conversions : MonoBehaviour
+{
+   [SerializeField] TMPro.TMP_InputField tempConversion;
+   [SerializeField] Text tempAnswer;
+     float t;
+     float e;
+     public float z;
+    public void ConversionStart()
     {
-        
+         t = Convert.ToInt32(tempConversion.text);
+         e = t - 32;
+         z = (float)(e * 0.5556);
+        Debug.Log(z);
+        Answer();
     }
 
-    // Update is called once per frame
-    void Update()
+   public void Answer()
     {
-        
+        tempAnswer.text = z.ToString() + "C";
     }
+
 }

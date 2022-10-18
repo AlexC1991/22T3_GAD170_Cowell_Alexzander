@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,19 +10,36 @@ namespace AlexzanderCowell
 }
 public class LeapYear : MonoBehaviour
 {
-    private TMPro.TextMeshProUGUI textMesh; // Calls for the TextMeshPro to be used in script.
-    private string yearAnswer; // Variable to call to what i want it to do.
-    InputField yearField;
+    public Text answerText; // Calls for the TextMeshPro to be used in script.
+    private float A = 4f;
+    public TMPro.TMP_InputField yearConverstions;
+    private bool yearYes = true;
+    private bool yearNo = false;
+    private float yearYes2 = 503f;
+    private float yearNo2 = 499.25f;
+    private float c;
+    private float a;
 
-
-    private void Update()
+    void Maths()
     {
+         a = Convert.ToInt32(yearConverstions.text);
+         c = a / A;
+        Debug.Log(c);
+        if (c <= yearNo2){
+            answerText.text = yearNo.ToString();
+        }
+
+        if (c >= yearYes2)
+        {
+            answerText.text = yearYes.ToString();
+        }
+
+        
+       
+        
         
     }
 
-    private void Start()
-    {
-        textMesh = GetComponent<TMPro.TextMeshProUGUI>(); // Gets textMesh variable to use the component for the script below it to output.
+    
 
-    }
 }
