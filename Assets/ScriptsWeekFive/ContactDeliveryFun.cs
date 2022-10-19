@@ -8,57 +8,68 @@ namespace AlexzanderCowell
 {
 
 }
-public class ContactDeliveryFun : MonoBehaviour
-{
+
+
+public class ContactDeliveryFun : MonoBehaviour { 
+
+    // Character 1
     [SerializeField] TMPro.TMP_InputField nameInput1;
     [SerializeField] TMPro.TMP_InputField phonenumberInput1;
     [SerializeField] TMPro.TMP_InputField preferrednameInput1;
     [SerializeField] TMPro.TMP_InputField emailInput1;
     [SerializeField] TMPro.TMP_InputField addressInput1;
 
+    // Character 2
     [SerializeField] TMPro.TMP_InputField nameInput2;
     [SerializeField] TMPro.TMP_InputField phonenumberInput2;
     [SerializeField] TMPro.TMP_InputField preferrednameInput2;
     [SerializeField] TMPro.TMP_InputField emailInput2;
     [SerializeField] TMPro.TMP_InputField addressInput2;
 
+    // Character 3
     [SerializeField] TMPro.TMP_InputField nameInput3;
     [SerializeField] TMPro.TMP_InputField phonenumberInput3;
     [SerializeField] TMPro.TMP_InputField preferrednameInput3;
     [SerializeField] TMPro.TMP_InputField emailInput3;
     [SerializeField] TMPro.TMP_InputField addressInput3;
 
-
+    // Character 1
     [SerializeField] Text printName1;
     [SerializeField] Text printPhone1;
     [SerializeField] Text printEmail1;
     [SerializeField] Text printAddress1;
     [SerializeField] Text printPreferred1;
 
+    // Character 2
     [SerializeField] Text printName2;
     [SerializeField] Text printPhone2;
     [SerializeField] Text printEmail2;
     [SerializeField] Text printAddress2;
     [SerializeField] Text printPreferred2;
 
+    // Character 3
     [SerializeField] Text printName3;
     [SerializeField] Text printPhone3;
     [SerializeField] Text printEmail3;
     [SerializeField] Text printAddress3;
     [SerializeField] Text printPreferred3;
 
-
+    // Character 1
     private string firstlastName1;
     private string phoneNumber1;
     private string preferredName1;
     private string email1;
     private string Address1;
+   
+    // Character 2
     private string firstlastName2;
     private string phoneNumber2;
     private string preferredName2;
     private string email2;
     private string Address2;
     private string firstlastName3;
+    
+    // Character 3
     private string phoneNumber3;
     private string preferredName3;
     private string email3;
@@ -91,8 +102,11 @@ public class ContactDeliveryFun : MonoBehaviour
 
     }
 
-    private void Start()
+    public void Printit()
     {
+        Character1();
+        Character2();
+        Character3();
        
     }
 

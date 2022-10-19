@@ -17,7 +17,7 @@ public class IsThisYourCard : MonoBehaviour
     {
         for(int i = 0; i < contacts.Count; i++)
         {
-            contacts[0].Setup();
+            contacts[0].Printit();
         }
     }
 }
