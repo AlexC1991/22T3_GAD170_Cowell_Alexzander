@@ -65,7 +65,7 @@ public class ContactDeliveryFun : MonoBehaviour
     private string Address3;
 
 
-    private void Setup()
+    public void Setup()
     {
 
         // Character 3
