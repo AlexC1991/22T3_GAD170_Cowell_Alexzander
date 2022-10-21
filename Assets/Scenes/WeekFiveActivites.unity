@@ -8334,6 +8334,8 @@ GameObject:
   - component: {fileID: 1389897634}
   - component: {fileID: 1389897633}
   - component: {fileID: 1389897632}
+  - component: {fileID: 1389897636}
+  - component: {fileID: 1389897635}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -8406,33 +8408,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 849869734}
+      - m_Target: {fileID: 1389897635}
         m_TargetAssemblyTypeName: ContactDeliveryFun, Assembly-CSharp
-        m_MethodName: Character1
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1145209344}
-        m_TargetAssemblyTypeName: ContactDeliveryFun, Assembly-CSharp
-        m_MethodName: Character2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1016543367}
-        m_TargetAssemblyTypeName: ContactDeliveryFun, Assembly-CSharp
-        m_MethodName: Character3
+        m_MethodName: Printit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8480,6 +8458,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389897630}
   m_CullTransparentMesh: 1
+--- !u!114 &1389897635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389897630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 280b1ea737d14f942a935438b3bb6fe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameInput1: {fileID: 1167590899}
+  phonenumberInput1: {fileID: 1364532026}
+  preferrednameInput1: {fileID: 2074083598}
+  emailInput1: {fileID: 1324819646}
+  addressInput1: {fileID: 499915030}
+  nameInput2: {fileID: 1408156645}
+  phonenumberInput2: {fileID: 868919827}
+  preferrednameInput2: {fileID: 1005224565}
+  emailInput2: {fileID: 881350386}
+  addressInput2: {fileID: 105645820}
+  nameInput3: {fileID: 1768120490}
+  phonenumberInput3: {fileID: 474680879}
+  preferrednameInput3: {fileID: 1047375031}
+  emailInput3: {fileID: 91548770}
+  addressInput3: {fileID: 393830593}
+  printName1: {fileID: 1277299670}
+  printPhone1: {fileID: 201051507}
+  printEmail1: {fileID: 1721866503}
+  printAddress1: {fileID: 726429506}
+  printPreferred1: {fileID: 1029108415}
+  printName2: {fileID: 870061001}
+  printPhone2: {fileID: 1781247190}
+  printEmail2: {fileID: 878026702}
+  printAddress2: {fileID: 1713424751}
+  printPreferred2: {fileID: 2102835536}
+  printName3: {fileID: 214676415}
+  printPhone3: {fileID: 2111495525}
+  printEmail3: {fileID: 1748504238}
+  printAddress3: {fileID: 297532444}
+  printPreferred3: {fileID: 93374329}
+--- !u!114 &1389897636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389897630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944ad02a680e2f04a9c66b7a1b8c1be7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contacts:
+  - {fileID: 849869734}
+  - {fileID: 1145209344}
+  - {fileID: 1016543367}
 --- !u!1 &1392993625
 GameObject:
   m_ObjectHideFlags: 0
@@ -10672,7 +10708,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 276, y: -3.1007767}
+  m_AnchoredPosition: {x: 276, y: -3.1007829}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1781247190
